@@ -7,19 +7,19 @@ Node: 16.19.1
 
 After cloning this repository, run the following in the project directory.
 
-0. `git checkout -b yourname`
-1. `bundle` (install bundler if needed: `gem install bundler`)
-2. `yarn` (install yarn if needed: `npm install -g yarn`)
-3. `rails db:migrate`
-4. `rails db:seed`
-5. `rails s` and visit `localhost:3000` to verify
+0. Create a new branch with your name
+1. Run bundler
+2. Run yarn
+3. Run the database migrations
+4. Run the seed
+5. Start the server and verify that it works
 
 ## Vehicle Selector
 
 You will be creating a form to select a vehicle. Begin by generating a page to display the form.
 
-1. `rails g controller VehicleSelector`
-2. Create `app/views/vehicle_selector/index.html.erb` and add `<%= react_component('VehicleSelector') %>`
+1. Make a controller to serve the root path
+2. Serve a page with the content `<%= react_component('VehicleSelector') %>`
 3. `rails g react:component VehicleSelector`
 4. Verify that the component loads to the page.
 
