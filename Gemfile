@@ -61,4 +61,6 @@ end
 
 gem "shakapacker", "= 6.6"
 
-gem "react-rails", "= 2.6"
+gem "react-rails", "> 2.6"
+
+gem 'pry', '~> 0.13.1'
