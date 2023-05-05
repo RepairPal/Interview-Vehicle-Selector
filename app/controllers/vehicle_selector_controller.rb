@@ -1,5 +1,5 @@
 class VehicleSelectorController < ApplicationController
   def index
-    render component: 'VehicleSelector', props: {test: 'test'}
+    render react_component: 'VehicleSelector'
   end
 end

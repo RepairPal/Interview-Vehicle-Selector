@@ -74,6 +74,7 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    coderay (1.1.3)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.0)
     crass (1.0.6)
@@ -123,6 +124,9 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.3-arm64-darwin)
       racc (~> 1.4)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
@@ -158,7 +162,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    react-rails (2.6.0)
+    react-rails (2.6.2)
       babel-transpiler (>= 0.7.0)
       connection_pool
       execjs
@@ -222,9 +226,10 @@ DEPENDENCIES
   bootsnap
   debug
   jbuilder
+  pry (~> 0.13.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
-  react-rails (= 2.6)
+  react-rails (> 2.6)
   rspec-rails
   shakapacker (= 6.6)
   sprockets-rails
